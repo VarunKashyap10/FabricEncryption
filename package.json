@@ -1,14 +1,11 @@
 {
-  "name": "nw.js-examples",
+  "name": "project",
   "version": "1.0.0",
   "description": "nw.js features demonstrated in a simple project",
   "license": "MIT",
-  "author": {
-    "name": "Julian Motz",
-    "url": "https://github.com/julmot"
-  },
+  "author": "Julian Motz (https://github.com/julmot)",
   "repository": {
-    "url": "https://github.com/VarunKashyap10/8thSemProject.git",
+    "url": "git+https://github.com/VarunKashyap10/8thSemProject.git",
     "type": "git"
   },
   "scripts": {
@@ -18,5 +15,10 @@
   "devDependencies": {
     "nw": "^0.18.3",
     "nw-builder": "^3.1.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/VarunKashyap10/8thSemProject/issues"
+  },
+  "homepage": "https://github.com/VarunKashyap10/8thSemProject#readme",
+  "main": "index.js"
 }
