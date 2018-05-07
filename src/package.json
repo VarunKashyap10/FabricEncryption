@@ -1,8 +1,8 @@
 {
-  "name": "nw.js-examples",
+  "name": "8thSemProject",
   "version": "1.0.0",
-  "description": "nw.js features demonstrated in a simple project",
-  "main": "views/main.html",
+  "description": "Features of blockchain explored",
+  "main": "index.html",
   "window": {
     "min_width": 400,
     "min_height": 420,
@@ -10,11 +10,10 @@
   },
   "maintainers": [
     {
-      "name": "Julian Motz",
-      "web": "https://github.com/julmot"
+      "name": "Varun Kashyap",
+      "web": "https://github.com/VarunKashyap10"
     }
   ],
-  "bugs": "https://github.com/julmot/nw.js-examples/issues",
   "licenses": [
     {
       "type": "MIT",
@@ -24,7 +23,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/julmot/nw.js-examples.git",
+      "url": "https://github.com/VarunKashyap10/8thSemProject.git",
       "path": "src/"
     }
   ],
