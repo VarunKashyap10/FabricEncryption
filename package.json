@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "nw.js features demonstrated in a simple project",
   "license": "MIT",
-  "author": "Julian Motz (https://github.com/julmot)",
+  "author": "Varun Kashyap",
   "repository": {
     "url": "git+https://github.com/VarunKashyap10/8thSemProject.git",
     "type": "git"
@@ -20,5 +20,12 @@
     "url": "https://github.com/VarunKashyap10/8thSemProject/issues"
   },
   "homepage": "https://github.com/VarunKashyap10/8thSemProject#readme",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fabric-ca-client": "^1.1.1",
+    "node-gyp": "^3.6.2",
+    "node-run-cmd": "^1.0.1",
+    "rebuild": "^0.1.2"
+  }
 }

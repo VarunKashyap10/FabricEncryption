@@ -45,7 +45,7 @@
 							<h3>Default Settings ----></h3>
 							<p>The network topology consists of 4 peer nodes and 1 ordering node.<br> The peer nodes are divided into 2 peer organizations.</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Start First Network</a></li>
+								<li><a href="business-logic/start-byfn.js" class="button scrolly">Start First Network</a></li>
 
 							</ul>
 						</div>
@@ -83,10 +83,21 @@
 												<div class="12u$">
 													<div class="select-wrapper">
 														<select name="demo-category" id="demo-category">
-															<option value="">-CryptoSystem Options-</option>
+															<option value="">-Encryption System Options-</option>
 															<option value="">AES 128</option>
 															<option value="">AES 256</option>
 															<option value="">RSA </option>
+															<option value="">ECDSA </option>
+														</select>
+													</div>
+												</div>
+												<div class="12u$">
+													<div class="select-wrapper">
+														<select name="demo-category" id="demo-category">
+															<option value="">-Hashing Options-</option>
+															<option value="">SHA2</option>
+															<option value="">SHA3</option>
+															<option value="">Blake</option>
 														</select>
 													</div>
 												</div>
@@ -116,13 +127,13 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>Control the Fabric</h2>
+							<p>Custom controls allow - adding peers, checking for alive docker containers, querying against peer, seting env to a peer, etc.</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Alive Docker Containers</h3>
+									<button href="source/dockerShow.js" onclick="dockerShow()">See containers</button>
 								</section>
 								<section>
 									<span class="icon major fa-lock"></span>

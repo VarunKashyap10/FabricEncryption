@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.5",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "nw": "^0.30.2"
   }
 }

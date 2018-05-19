@@ -1,0 +1,50 @@
+/**
+ * Sample business network definition.
+ */
+namespace org.acme.sample
+
+asset E2EMsg identified by MsgId {
+  o String MsgId
+  --> User producer
+  o String title
+  o String topic
+  o String tags
+  o String urls
+  o String length
+  o Boolean published
+}
+
+participant User identified by userId {
+  o String userId
+  o String firstName
+  o String lastName
+  o Double points
+  o Double reputation
+}
+
+transaction RecievedTransaction {
+  --> E2EMsg msg
+  --> User consumer
+}
+
+transaction PublishedTransaction {
+  --> E2EMsg msg
+  --> User producer
+}
+
+event WatchedEvent {
+  o String eventName
+  --> E2EMsg msg
+  --> User producer
+  --> User consumer
+}
+
+event PublishedEvent {
+  o String eventName
+  --> E2EMsg msg
+  --> User producer
+}
+
+event ErrorEvent {
+  o String eventName
+}
