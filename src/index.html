@@ -6,15 +6,22 @@
 -->
 <html>
 	<head>
+			<script>
+					function openDevTools()
+					{
+						require('nw.gui').Window.get().showDevTools();
+					}
+				  </script>
 		<title>8thSemProject- VarunKashyap</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/extraModal.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body onload="openDevTools()">
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -132,8 +139,17 @@
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Alive Docker Containers</h3>
-									<button href="source/dockerShow.js" onclick="dockerShow()">See containers</button>
+									<h3>Docker Info</h3>
+									<button id="btnModal" data-toggle="modal" data-target="#myModal" >View file</button>
+									<!-- The Modal -->
+									<div id="myModal" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+
+											<div class="modal-content">
+												<p id="modal1Text"></p>
+											</div>
+										</div>
+									</div> 
 								</section>
 								<section>
 									<span class="icon major fa-lock"></span>
@@ -241,6 +257,7 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="./business-logic/dockerFunctions.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 

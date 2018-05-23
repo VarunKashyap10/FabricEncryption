@@ -1,0 +1,1 @@
+var sdk=require('fabric-client');
