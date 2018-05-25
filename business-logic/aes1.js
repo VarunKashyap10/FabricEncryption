@@ -1,1 +1,1 @@
-var sdk=require('fabric-client');
+require('./test/unit/client');

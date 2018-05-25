@@ -1,0 +1,12 @@
+CONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS              PORTS                                            NAMES
+262b5c5657bd        hyperledger/fabric-peer      "peer node start"        31 minutes ago      Up 30 minutes       0.0.0.0:8051->7051/tcp, 0.0.0.0:8053->7053/tcp   peer0.org2.example.com
+e0df787e1e2c        hyperledger/fabric-peer      "peer node start"        31 minutes ago      Up 30 minutes       0.0.0.0:7051->7051/tcp, 0.0.0.0:7053->7053/tcp   peer0.org1.example.com
+0f7c507ffbfe        hyperledger/fabric-ca        "sh -c 'fabric-ca-se…"   31 minutes ago      Up 31 minutes       0.0.0.0:8054->7054/tcp                           ca_peerOrg2
+778a933c8e90        hyperledger/fabric-orderer   "orderer"                31 minutes ago      Up 31 minutes       0.0.0.0:7050->7050/tcp                           orderer.example.com
+8110fda6885b        hyperledger/fabric-ca        "sh -c 'fabric-ca-se…"   31 minutes ago      Up 31 minutes       0.0.0.0:7054->7054/tcp                           ca_peerOrg1
+fbed4df179d9        hyperledger/fabric-couchdb   "tini -- /docker-ent…"   36 hours ago        Up 31 minutes       4369/tcp, 9100/tcp, 0.0.0.0:5984->5984/tcp       couchdb
+NETWORK ID          NAME                DRIVER              SCOPE
+51dfee01f2be        bridge              bridge              local
+68b16bd95829        fixtures_default    bridge              local
+20c2b885db15        host                host                local
+360577d1f32b        none                null                local

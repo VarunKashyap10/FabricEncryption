@@ -1,0 +1,78 @@
+CryptoSuite_ECDSA_AES {
+  _hashAlgo: 'SHA2',
+  _keySize: 256,
+  _cryptoKeyStore: null,
+  _curveName: 'secp256r1',
+  _ecdsaCurve: 
+   PresetCurve {
+     curve: 
+      ShortCurve {
+        type: 'short',
+        p: <BN: ffffffff00000001000000000000000000000000ffffffffffffffffffffffff>,
+        red: [Object],
+        zero: <BN-R: 0>,
+        one: <BN-R: fffffffeffffffffffffffffffffffff0000000000000000000000010>,
+        two: <BN-R: 1fffffffdfffffffffffffffffffffffe0000000000000000000000020>,
+        n: <BN: ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551>,
+        g: <EC Point x: 6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296 y: 4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5>,
+        _wnafT1: [Array],
+        _wnafT2: [Array],
+        _wnafT3: [Array],
+        _wnafT4: [Array],
+        _maxwellTrick: true,
+        redN: <BN-R: 8648c209fe30feb0c0166ce652e96b789b10543d3fe99319ad169483335f5689>,
+        a: <BN-R: ffffffcf00000031000000000000000000000030ffffffffffffffffffffffcf>,
+        b: <BN-R: c30061dd487483415a220abf7212ed6acf005cca8843090d89cdf6229c4bddfd>,
+        tinv: <BN-R: 7fffffff7fffffffffffffffffffffff8000000000000000000000008>,
+        zeroA: false,
+        threeA: true,
+        endo: undefined,
+        _endoWnafT1: [Array],
+        _endoWnafT2: [Array] },
+     g: <EC Point x: 6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296 y: 4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5>,
+     n: <BN: ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551>,
+     hash: 
+      { [Function: SHA256]
+        super_: [Function: BlockHash],
+        blockSize: 512,
+        outSize: 256,
+        hmacStrength: 192,
+        padLength: 64 } },
+  _hashFunction: [Function],
+  _hashOutputSize: 32,
+  _ecdsa: 
+   EC {
+     curve: 
+      ShortCurve {
+        type: 'short',
+        p: <BN: ffffffff00000001000000000000000000000000ffffffffffffffffffffffff>,
+        red: [Object],
+        zero: <BN-R: 0>,
+        one: <BN-R: fffffffeffffffffffffffffffffffff0000000000000000000000010>,
+        two: <BN-R: 1fffffffdfffffffffffffffffffffffe0000000000000000000000020>,
+        n: <BN: ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551>,
+        g: <EC Point x: 6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296 y: 4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5>,
+        _wnafT1: [Array],
+        _wnafT2: [Array],
+        _wnafT3: [Array],
+        _wnafT4: [Array],
+        _maxwellTrick: true,
+        redN: <BN-R: 8648c209fe30feb0c0166ce652e96b789b10543d3fe99319ad169483335f5689>,
+        a: <BN-R: ffffffcf00000031000000000000000000000030ffffffffffffffffffffffcf>,
+        b: <BN-R: c30061dd487483415a220abf7212ed6acf005cca8843090d89cdf6229c4bddfd>,
+        tinv: <BN-R: 7fffffff7fffffffffffffffffffffff8000000000000000000000008>,
+        zeroA: false,
+        threeA: true,
+        endo: undefined,
+        _endoWnafT1: [Array],
+        _endoWnafT2: [Array] },
+     n: <BN: ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551>,
+     nh: <BN: 7fffffff800000007fffffffffffffffde737d56d38bcf4279dce5617e3192a8>,
+     g: <EC Point x: 6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296 y: 4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5>,
+     hash: 
+      { [Function: SHA256]
+        super_: [Function: BlockHash],
+        blockSize: 512,
+        outSize: 256,
+        hmacStrength: 192,
+        padLength: 64 } } }
