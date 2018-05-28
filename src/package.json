@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": "./main.js",
   "window": {
-    "toolbar":true,
+    "toolbar": true,
     "min_width": 400,
     "min_height": 420,
     "icon": "assets/icon.png"
@@ -31,10 +31,11 @@
   ],
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.5",
+    "express": "^4.16.3",
     "font-awesome": "^4.7.0",
     "nw": "^0.30.2"
   },
-  "developer":{
-    "showDevToolsOnStartup":true
+  "developer": {
+    "showDevToolsOnStartup": true
   }
 }

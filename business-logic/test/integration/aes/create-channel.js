@@ -42,7 +42,7 @@ if (process.argv.length > 2) {
 
 //
 //Attempt to send a request to the orderer with the createChannel method
-///////////////\\\\\\\\/
+//
 test('\n\n***** SDK Built config update  create flow  *****\n\n', function(t) {
 	testUtil.resetDefaults();
 	Client.addConfigFile(path.join(__dirname, './config.json'));
@@ -71,7 +71,7 @@ test('\n\n***** SDK Built config update  create flow  *****\n\n', function(t) {
 		return Client.newDefaultKeyValueStore({path: testUtil.storePathForOrg(org)});
 	}).then((store) => {
 		client.setStateStore(store);
-		var cryptoSuite = Client.newCryptoSuite();
+		var cryptoSuite = Client.newCryptoSuite({software:true ,keysize:256 ,algorithm:'EC',hash:'SHA2'});
 		cryptoSuite.setCryptoKeyStore(Client.newCryptoKeyStore({path: testUtil.storePathForOrg(org)}));
 		client.setCryptoSuite(cryptoSuite);
 

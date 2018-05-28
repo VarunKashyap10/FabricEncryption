@@ -34,9 +34,9 @@ var NetworkConfig = require('fabric-client/lib/impl/NetworkConfig_1_0.js');
 var testutil = require('./util.js');
 
 var caImport;
-
+//require('../../../node_modules/fabric-cnolient/lib/protos/common/configtx.proto')
 var grpc = require('grpc');
-var _configtxProto = grpc.load(__dirname + '/../../fabric-client/lib/protos/common/configtx.proto').common;
+var _configtxProto = grpc.load(__dirname + '../../../node_modules/fabric-cnolient/lib/protos/common/configtx.proto').common;
 var rewire = require('rewire');
 var ClientRewired = rewire('fabric-client/lib/Client.js');
 

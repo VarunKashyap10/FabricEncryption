@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nw src/",
+    "dev": "nw src/src/",
     "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/",
     "test": "gulp test-headless",
     "compile": "tsc --project test/typescript",

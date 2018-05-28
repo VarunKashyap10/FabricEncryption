@@ -1,0 +1,415 @@
+[32minfo[39m: [TestUtil]: 
+
+*******************************************************************************
+*******************************************************************************
+*                                          
+* Using temp dir: C:\Users\kvaru\AppData\Local\Temp\hfc
+*                                          
+*******************************************************************************
+*******************************************************************************
+
+TAP version 13
+# 
+
+***** SDK Built config update  create flow  *****
+
+
+ok 1 Successfully retrieved TLS certificate
+ok 2 Successfull extracted the config update from the configtx envelope
+ok 3 Successfully enrolled user 'admin' for org1
+ok 4 Successfully signed config update
+ok 5 Successfully enrolled user 'admin' for org2
+ok 6 Successfully signed config update
+ok 7 Successfully enrolled user 'admin' for orderer
+ok 8 Successfully failed with max error on the create channel: Error: 8 RESOURCE_EXHAUSTED: Sent message larger than max (3193 vs. 1000)
+ok 9 Successfully received the configuration
+ok 10 Successfully created the channel.
+not ok 11 Failed to create the channel. 
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\create-channel.js:189:6)
+    stack: |-
+      Error: Failed to create the channel. 
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\create-channel.js:189:6)
+          at <anonymous>
+          at process._tickCallback (internal/process/next_tick.js:188:7)
+  ...
+not ok 12 Error: Failed at e2eUtils.tlsEnroll.then.then.then.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\create-channel.js:190:10) at <anonymous> at process._tickCallback (internal/process/next_tick.js:188:7)
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then.then.then.then.then.then.catch (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\create-channel.js:196:5)
+    stack: |-
+      Error: Error: Failed
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\create-channel.js:190:10)
+          at <anonymous>
+          at process._tickCallback (internal/process/next_tick.js:188:7)
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then.then.then.then.then.catch (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\create-channel.js:196:5)
+          at <anonymous>
+          at process._tickCallback (internal/process/next_tick.js:188:7)
+  ...
+# 
+
+***** End-to-end flow: join channel *****
+
+
+ok 13 Successfully retrieved TLS certificate
+ok 14 Successfully enrolled orderer 'admin' (joined_channel 1)
+ok 15 Successfully got the genesis block
+ok 16 Successfully enrolled org (join_channel):org1 'admin'
+not ok 17  Failed to join channel
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\join-channel.js:162:6)
+    stack: |-
+      Error:  Failed to join channel
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\join-channel.js:162:6)
+          at <anonymous>
+  ...
+not ok 18 Failed to join peers in organization "peerOrg1" to the channel. Error: Failed to join channel at e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\join-channel.js:163:10) at <anonymous>
+  ---
+    operator: fail
+    at: joinChannel.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\join-channel.js:51:5)
+    stack: |-
+      Error: Failed to join peers in organization "peerOrg1" to the channel. Error: Failed to join channel
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\join-channel.js:163:10)
+          at <anonymous>
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at joinChannel.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\join-channel.js:51:5)
+          at <anonymous>
+  ...
+ok 19 Successfully joined peers in organization "peerOrg2" to the channel
+# 
+
+***** Node-Chaincode End-to-end flow: chaincode install *****
+
+
+ok 20 Successfully retrieved TLS certificate
+ok 21 Successfully enrolled user 'admin' (e2eUtil 1)
+[32minfo[39m: [packager/Node.js]: packaging Node Chaincode from C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\fixtures\src\node_cc\example_cc
+not ok 22 Error: Failed to send install Proposal or receive valid response: Error: 2 UNKNOWN: chaincode error (status: 500, message: Error installing chaincode code e2enodecc:v0(chaincode /var/hyperledger/production/chaincodes/e2enodecc.v0 exists)) at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:166:10) at <anonymous>
+  ---
+    operator: fail
+    at: e2eUtils.installChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\install-chaincode.js:38:6)
+    stack: |-
+      Error: Error: Failed to send install Proposal or receive valid response: Error: 2 UNKNOWN: chaincode error (status: 500, message: Error installing chaincode code e2enodecc:v0(chaincode /var/hyperledger/production/chaincodes/e2enodecc.v0 exists))
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:166:10)
+          at <anonymous>
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.installChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\install-chaincode.js:38:6)
+          at <anonymous>
+  ...
+ok 23 Successfully retrieved TLS certificate
+ok 24 Successfully enrolled user 'admin' (e2eUtil 1)
+[32minfo[39m: [packager/Node.js]: packaging Node Chaincode from C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\fixtures\src\node_cc\example_cc
+not ok 25 Error: Failed to send install Proposal or receive valid response: Error: 2 UNKNOWN: chaincode error (status: 500, message: Error installing chaincode code e2enodecc:v0(chaincode /var/hyperledger/production/chaincodes/e2enodecc.v0 exists)) at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:166:10) at <anonymous>
+  ---
+    operator: fail
+    at: e2eUtils.installChaincode.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\install-chaincode.js:45:6)
+    stack: |-
+      Error: Error: Failed to send install Proposal or receive valid response: Error: 2 UNKNOWN: chaincode error (status: 500, message: Error installing chaincode code e2enodecc:v0(chaincode /var/hyperledger/production/chaincodes/e2enodecc.v0 exists))
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:166:10)
+          at <anonymous>
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.installChaincode.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\install-chaincode.js:45:6)
+          at <anonymous>
+  ...
+# 
+
+***** Node-Chaincode End-to-end flow: instantiate chaincode *****
+
+
+ok 26 Successfully retrieved TLS certificate
+ok 27 Successfully enrolled user 'admin' (e2eUtil 2)
+not ok 28 Failed to send instantiate Proposal or receive valid response. Response null or status is not 200. exiting...
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:432:6)
+    stack: |-
+      Error: Failed to send instantiate Proposal or receive valid response. Response null or status is not 200. exiting...
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:432:6)
+          at <anonymous>
+  ...
+not ok 29 Error: Failed to send instantiate Proposal or receive valid response. Response null or status is not 200. exiting... at e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:433:10) at <anonymous>
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:451:5)
+    stack: |-
+      Error: Error: Failed to send instantiate Proposal or receive valid response. Response null or status is not 200. exiting...
+          at e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:433:10)
+          at <anonymous>
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:451:5)
+          at <anonymous>
+  ...
+not ok 30 Failed to instantiate chaincode 
+  ---
+    operator: fail
+    at: e2eUtils.instantiateChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\instantiate-chaincode.js:43:7)
+    stack: |-
+      Error: Failed to instantiate chaincode 
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.instantiateChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\instantiate-chaincode.js:43:7)
+          at <anonymous>
+  ...
+# 
+
+***** Node-Chaincode End-to-end flow: invoke transaction to move money *****
+
+
+ok 31 Successfully retrieved TLS certificate
+ok 32 Successfully enrolled user 'admin'
+ok 33 Successfully enrolled user 'admin' (e2eUtil 3)
+# *****************************************************************************
+# stop and start the peer event hub ---- N  O  W ----- you have 0 millis Mon May 28 2018 04:17:27 GMT+0530 (India Standard Time)
+# *****************************************************************************
+ok 34 transaction proposal has response status of good
+ok 35 transaction proposal signature and endorser are valid
+ok 36 transaction proposal payloads are valid
+ok 37 transaction proposal has response status of good
+ok 38 transaction proposal signature and endorser are valid
+ok 39 transaction proposal payloads are valid
+ok 40 compareProposalResponseResults exection did not throw an error
+ok 41  All proposals have a matching read/writes sets
+ok 42 Successfully sent Proposal and received ProposalResponse
+ok 43 The balance transfer transaction has been committed on peer localhost:8053
+ok 44 Successfully sent transaction to the orderer.
+# ******************************************************************
+# To manually run /test/integration/query.js, set the following environment variables:
+# export E2E_TX_ID='bd69b5ba92d07b3d969b1c7dc104dd36152f2d886344e588cfe9bc1444ffc1e3'
+# ******************************************************************
+[32minfo[39m: [Channel.js]: close - closing connections
+[32minfo[39m: [Peer.js]: close - closing peer connection localhost:7051
+[32minfo[39m: [Peer.js]: close - closing peer connection localhost:8051
+[32minfo[39m: [Orderer.js]: close - closing orderer connection localhost:7050
+ok 45 Successfully closed all connections
+ok 46 Successfully invoke transaction chaincode on channel
+# 
+
+***** Node-Chaincode End-to-end flow: query chaincode *****
+
+
+ok 47 Successfully retrieved TLS certificate
+ok 48 Successfully loaded member from persistence
+ok 49 Successfully enrolled user 'admin' (e2eUtil 4)
+not ok 50 checking query results are correct that user b has 300 now after the move
+  ---
+    operator: equal
+    expected: '300'
+    actual:   '520'
+    at: e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+    stack: |-
+      Error: checking query results are correct that user b has 300 now after the move
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.equal.Test.equals.Test.isEqual.Test.is.Test.strictEqual.Test.strictEquals (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:388:10)
+          at Test.bound [as equal] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+          at <anonymous>
+  ...
+not ok 51 checking query results are correct that user b has 300 now after the move
+  ---
+    operator: equal
+    expected: '300'
+    actual:   '520'
+    at: e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+    stack: |-
+      Error: checking query results are correct that user b has 300 now after the move
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.equal.Test.equals.Test.isEqual.Test.is.Test.strictEqual.Test.strictEquals (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:388:10)
+          at Test.bound [as equal] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+          at <anonymous>
+  ...
+ok 52 Successfully query chaincode on the channel
+# 
+
+***** Node-Chaincode U P G R A D E flow: chaincode install *****
+
+
+ok 53 Successfully retrieved TLS certificate
+ok 54 Successfully enrolled user 'admin' (e2eUtil 1)
+[32minfo[39m: [packager/Node.js]: packaging Node Chaincode from C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\fixtures\src\node_cc\example_cc1
+not ok 55 Error: Failed to send install Proposal or receive valid response: Error: 2 UNKNOWN: chaincode error (status: 500, message: Error installing chaincode code e2enodecc:v1(chaincode /var/hyperledger/production/chaincodes/e2enodecc.v1 exists)) at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:166:10) at <anonymous>
+  ---
+    operator: fail
+    at: e2eUtils.installChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\upgrade.js:35:6)
+    stack: |-
+      Error: Error: Failed to send install Proposal or receive valid response: Error: 2 UNKNOWN: chaincode error (status: 500, message: Error installing chaincode code e2enodecc:v1(chaincode /var/hyperledger/production/chaincodes/e2enodecc.v1 exists))
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:166:10)
+          at <anonymous>
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.installChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\upgrade.js:35:6)
+          at <anonymous>
+  ...
+ok 56 Successfully installed chaincode in peers of organization "org2"
+# 
+
+***** Node-Chaincode U P G R A D E flow: upgrade chaincode *****
+
+
+ok 57 Successfully retrieved TLS certificate
+ok 58 Successfully enrolled user 'admin' (e2eUtil 2)
+not ok 59 Failed to send upgrade Proposal or receive valid response. Response null or status is not 200. exiting...
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:432:6)
+    stack: |-
+      Error: Failed to send upgrade Proposal or receive valid response. Response null or status is not 200. exiting...
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:432:6)
+          at <anonymous>
+  ...
+not ok 60 Error: Failed to send upgrade Proposal or receive valid response. Response null or status is not 200. exiting... at e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:433:10) at <anonymous>
+  ---
+    operator: fail
+    at: e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:451:5)
+    stack: |-
+      Error: Error: Failed to send upgrade Proposal or receive valid response. Response null or status is not 200. exiting...
+          at e2eUtils.tlsEnroll.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:433:10)
+          at <anonymous>
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:451:5)
+          at <anonymous>
+  ...
+not ok 61 Failed to upgrade chaincode 
+  ---
+    operator: fail
+    at: e2eUtils.instantiateChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\upgrade.js:57:7)
+    stack: |-
+      Error: Failed to upgrade chaincode 
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.fail (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:318:10)
+          at Test.bound [as fail] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.instantiateChaincode.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\nodechaincode\upgrade.js:57:7)
+          at <anonymous>
+  ...
+# 
+
+***** Node-Chaincode U P G R A D E flow: invoke transaction to move money *****
+
+
+ok 62 Successfully retrieved TLS certificate
+ok 63 Successfully enrolled user 'admin'
+ok 64 Successfully enrolled user 'admin' (e2eUtil 3)
+# *****************************************************************************
+# stop and start the peer event hub ---- N  O  W ----- you have 0 millis Mon May 28 2018 04:17:40 GMT+0530 (India Standard Time)
+# *****************************************************************************
+ok 65 transaction proposal has response status of good
+ok 66 transaction proposal signature and endorser are valid
+ok 67 transaction proposal payloads are valid
+ok 68 transaction proposal has response status of good
+ok 69 transaction proposal signature and endorser are valid
+ok 70 transaction proposal payloads are valid
+ok 71 compareProposalResponseResults exection did not throw an error
+ok 72  All proposals have a matching read/writes sets
+ok 73 Successfully sent Proposal and received ProposalResponse
+ok 74 The balance transfer transaction has been committed on peer localhost:8053
+ok 75 Successfully sent transaction to the orderer.
+# ******************************************************************
+# To manually run /test/integration/query.js, set the following environment variables:
+# export E2E_TX_ID='18268c266982728827c72b02275ec941ace3a27bef3713c6f325e0ca775eb5fb'
+# ******************************************************************
+[32minfo[39m: [Channel.js]: close - closing connections
+[32minfo[39m: [Peer.js]: close - closing peer connection localhost:7051
+[32minfo[39m: [Peer.js]: close - closing peer connection localhost:8051
+[32minfo[39m: [Orderer.js]: close - closing orderer connection localhost:7050
+ok 76 Successfully closed all connections
+ok 77 Successfully invoke transaction chaincode on the channel
+# 
+
+***** Node-Chaincode U P G R A D E flow: query chaincode *****
+
+
+ok 78 Successfully retrieved TLS certificate
+ok 79 Successfully loaded member from persistence
+ok 80 Successfully enrolled user 'admin' (e2eUtil 4)
+not ok 81 checking query results are correct that user b has 410 now after the move
+  ---
+    operator: equal
+    expected: '410'
+    actual:   '630'
+    at: e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+    stack: |-
+      Error: checking query results are correct that user b has 410 now after the move
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.equal.Test.equals.Test.isEqual.Test.is.Test.strictEqual.Test.strictEquals (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:388:10)
+          at Test.bound [as equal] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+          at <anonymous>
+  ...
+not ok 82 checking query results are correct that user b has 410 now after the move
+  ---
+    operator: equal
+    expected: '410'
+    actual:   '630'
+    at: e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+    stack: |-
+      Error: checking query results are correct that user b has 410 now after the move
+          at Test.assert [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:225:54)
+          at Test.bound [as _assert] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at Test.equal.Test.equals.Test.isEqual.Test.is.Test.strictEqual.Test.strictEquals (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:388:10)
+          at Test.bound [as equal] (C:\Users\kvaru\Desktop\FabricEncryption\node_modules\tape\lib\test.js:77:32)
+          at e2eUtils.tlsEnroll.then.then.then.then (C:\Users\kvaru\Desktop\FabricEncryption\business-logic\test\integration\e2e\e2eUtils.js:877:8)
+          at <anonymous>
+  ...
+ok 83 Successfully query chaincode on the channel
+# 
+
+***** Node-Chaincode TransientMap Support in Proposals *****
+
+
+ok 84 Successfully retrieved TLS certificate
+ok 85 Successfully loaded member from persistence
+ok 86 Successfully enrolled user 'admin' (e2eUtil 4)
+ok 87 Checking the result has the transientMap value returned by the chaincode
+ok 88 Checking the result has the transientMap value returned by the chaincode
+ok 89 Successfully verified transient map values
+
+1..89
+# tests 89
+# pass  72
+# fail  17
+
